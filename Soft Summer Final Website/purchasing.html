@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Purchase Tickets</title>
+    <link href="style 4.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src="script.js"></script>
+
+    <style>
+      .bg{
+        width: 100%;
+        height: 15%;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="navigation-bar">
+     
+     
+          <div id="navigation-container">
+     
+            <img src="Soft.png"
+            width="91"
+            height="70.4">
+     
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li><a href="event.html">Event Info</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="tickets.html">Tickets</a></li>
+              <li><a href="purchasing.html">Purchasing</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+
+
+    </th>
+
+
+</tr>
+
+
+</table>
+
+
+
+<div id='ticketform'>
+<div class='form'>
+    <h1>RESERVE TICKET</h1>
+    <center>
+    <p>Pay later!<p>
+    </center>
+    <fieldset>
+        <legend> Fill in the blanks</legend>
+
+        <label for="rname">Name</label><br/>
+        <input type="text" name="rname" id="rname" /><br/>
+
+        <label for="rdate">Date</label><br/>
+        <input type="date" name="rdate" id="rdate" /><br/>
+
+        <p>
+            <label>Email:
+               <input type = "email" placeholder = "name@domain.com" 
+                  required /> (name@domain.com)
+            </label>
+         </p>
+
+        <label for="ticketType">Ticket type</label><br/>
+        <input type="radio" id="rgeneral" name="rticketType" value="general" checked>
+        <label for="rgeneral">General</label><br>
+        <input type="radio" id="rvip" name="rticketType" value="vip">
+        <label for="vip">VIP</label><br>
+
+        <button id="reserve" onclick="reserve()"> Reserve</button>
+    </fieldset>
+</div>
+
+
+<div class='form'>
+    <h1>PURCHASE TICKET</h1>
+    <center>
+    <p>Buy now!<p>
+    </center>
+    <fieldset>
+        <legend> Fill in the blanks</legend>
+
+        <label for="pname">Name</label><br/>
+        <input type="text" name="pname" id="pname" /><br/>
+
+        <label for="pdate">Date</label><br/>
+        <input type="date" name="pdate" id="pdate" /><br/>
+
+        <p>
+            <label>Email:
+               <input type = "email" placeholder = "name@domain.com" 
+                  required /> (name@domain.com)
+            </label>
+         </p>
+        
+        <label for="ticketType">Ticket type</label><br/>
+        <input type="radio" id="pgeneral" name="pticketType" value="general" checked>
+        <label for="general">General</label><br>
+        <input type="radio" id="pvip" name="pticketType" value="vip">
+        <label for="vip">VIP</label><br>
+
+        <label for="creditCard">Credit Card Number / CVV </label><br/>
+        <input type="text" name="creditCard" id="creditCard" /><br/>
+
+        <label for="expiration">Expiration date (mm/yy)</label><br/>
+        <input type="text" name="expiration" id="expiration" /><br/>
+
+        <button id="purchase" onclick="purchase()"> Purchase</button>
+    </fieldset>
+</div>
+</div>
+
+<div id='output'></div>
+
+
+
+</div>
+
+</div>
+</div>
+</center>
+</body>
+
+</html>
